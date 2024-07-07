@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection Form</title>
+</head>
+<body>
+    <h2>Enter User Data</h2>
+    <form method="POST" action="/submit">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="total_income">Total Income:</label>
+        <input type="text" id="total_income" name="total_income" required><br><br>
+
+        <label>Expenses:</label><br>
+        <input type="checkbox" id="utilities" name="utilities">
+        <label for="utilities">Utilities:</label>
+        <input type="text" id="utilities_amount" name="utilities_amount"><br>
+
+        <input type="checkbox" id="entertainment" name="entertainment">
+        <label for="entertainment">Entertainment:</label>
+        <input type="text" id="entertainment_amount" name="entertainment_amount"><br>
+
+        <input type="checkbox" id="school_fees" name="school_fees">
+        <label for="school_fees">School Fees:</label>
+        <input type="text" id="school_fees_amount" name="school_fees_amount"><br>
+
+        <input type="checkbox" id="shopping" name="shopping">
+        <label for="shopping">Shopping:</label>
+        <input type="text" id="shopping_amount" name="shopping_amount"><br>
+
+        <input type="checkbox" id="healthcare" name="healthcare">
+        <label for="healthcare">Healthcare:</label>
+        <input type="text" id="healthcare_amount" name="healthcare_amount"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
